@@ -1,0 +1,147 @@
+.logo {
+    margin-right: 2rem;
+    font-weight : bold;
+}
+
+.logo p {
+    margin: 0;
+}
+
+.navbar__leftgroup {
+    display    : flex;
+    align-items: center;
+}
+
+.navbar {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    padding        : 1.5rem 1.25rem;
+}
+
+.navbar__links {
+    display    : flex;
+    align-items: center;
+}
+
+.book__icon {
+    border      : none;
+    padding     : 10px 20px;
+    cursor      : pointer;
+    margin-right: 1rem;
+}
+
+.book__icon::after {
+    content         : "";
+    display         : block;
+    width           : 0;
+    height          : 2px;
+    background-color: #000;
+    transition      : width 0.3s ease-in-out;
+}
+
+.book__icon:hover::after {
+    width: 100%;
+}
+
+.icon {
+    margin-right    : .75rem;
+    width           : 26px;
+    padding         : .5rem;
+    background-color: rgba(242, 240, 233, 1);
+    border-radius   : 50%;
+}
+
+.user__image {
+    height          : 30px;
+    width           : 30px;
+    padding         : .25rem;
+    border-radius   : 50%;
+    background-color: rgba(242, 240, 233, 1);
+}
+
+.icon:hover {
+    background-color: rgb(201, 200, 198);
+}
+
+.icon,
+.book__icon,
+.mobile__icon {
+    cursor: pointer;
+}
+
+
+.mobile__icon {
+    width: 32px;
+}
+
+.navbar__mobile {
+    display: none;
+}
+
+@media screen and (max-width:910px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbar__mobile {
+        padding        : 1.5rem 1.25rem;
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+    }
+
+    .navbar__mobile--container {
+        display : none;
+        position: absolute;
+        left    : 0;
+        top     : 0;
+    }
+
+    .navbar__mobile--links {
+        transition      : 1s all;
+        animation       : fadeFromLeft .1s forwards;
+        list-style      : none;
+        background-color: white;
+        height          : 100vh;
+        padding         : 2rem;
+        width           : 250px;
+        margin          : 0;
+    }
+
+    .navbar__mobile--links li {
+        text-align   : left;
+        margin-bottom: 1.75rem;
+        font-size    : 1rem;
+        font-weight  : bold;
+        cursor       : pointer;
+    }
+
+    .navbar__mobile--logo {
+        font-size     : 1.5rem !important;
+        padding-bottom: 1.5rem;
+        border-bottom : 1px solid rgba(146, 146, 146, 0.596);
+    }
+
+    .navbar__mobile--exitButton {
+        cursor  : pointer;
+        position: absolute;
+        top     : 1.8rem;
+        right   : 1.5rem;
+    }
+}
+
+/* NavBar Animation */
+@keyframes fadeFromLeft {
+    0% {
+        width  : 0;
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        opacity: 1;
+        width  : 250px;
+        display: block;
+    }
+}
