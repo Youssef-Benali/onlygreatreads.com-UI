@@ -32,6 +32,48 @@
     display: none;
 }
 
+.navbar__login {
+    position: relative;
+}
+
+.navbar__login a {
+    margin-right: 1.75rem;
+}
+
+.navbar__login_btn:after {
+    content         : "";
+    position        : absolute;
+    left            : 0;
+    bottom          : -3px;
+    width           : 0;
+    height          : 2px;
+    background-color: #000;
+    transition      : width 0.3s ease-in-out;
+}
+
+.navbar__login_btn:hover::after {
+    opacity: .8;
+    width  : 45px;
+}
+
+.navbar__login_btn:hover {
+    opacity: .8;
+}
+
+.navbar__signup_btn {
+    transition   : .25s color;
+    color        : #2D82b5;
+    border       : 1px solid #53A7D8;
+    padding      : .75rem 1.25rem;
+    border-radius: 1.5rem;
+}
+
+.navbar__signup_btn:hover {
+    color      : #d8dadb;
+    background : #2D82b5;
+    font-weight: bold;
+}
+
 .input__group {
     position: relative;
 }
