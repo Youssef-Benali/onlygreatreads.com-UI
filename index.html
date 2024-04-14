@@ -11,7 +11,72 @@
   </head>
   <body>
     <main class="container">
-    
+      <!-- Mobile NavBar -->
+      <nav class="navbar__mobile">
+        <div class="logo">
+          <p>Only Great Reads</p>
+        </div>
+        <img
+          onclick="toggleNavigationBar()"
+          class="mobile__icon"
+          src="assets/icons/menu.svg"
+          alt="Mobile menu icon"
+        />
+        <section class="navbar__mobile--container">
+          <ul class="navbar__mobile--links">
+            <li class="navbar__mobile--logo">Only Great Reads</li>
+            <li>My books</li>
+            <li>Messages</li>
+            <li>Notifications</li>
+            <li>Friends</li>
+          </ul>
+          <div onclick="closeMobileMenu()" class="navbar__mobile--exitButton">
+            <img src="assets/icons/x.svg" alt="Mobile exit button icon" />
+          </div>
+        </section>
+      </nav>
+
+      <!-- Desktop NavBar -->
+      <nav class="navbar">
+        <section class="navbar__leftgroup">
+          <div class="logo"><p>Only Great Reads</p></div>
+          <form class="input__group">
+            <img src="assets/icons/search.svg" alt="Search icon" />
+            <input id="friends" type="text" placeholder="Search friends..." />
+          </form>
+        </section>
+
+        <!-- If connected -->
+        <section class="navbar__rightgroup">
+          <div class="navbar__links">
+            <div class="book__icon">My Books</div>
+            <img
+              class="icon"
+              src="assets/icons/message-circle.svg"
+              alt="Message icon"
+              srcset=""
+            />
+            <img
+              class="icon"
+              src="assets/icons/bell.svg"
+              alt="Notification icon"
+              srcset=""
+            />
+            <img
+              class="icon"
+              src="assets/icons/users.svg"
+              alt="Friends icon"
+              srcset=""
+            />
+            <div class="user__image"></div>
+          </div>
+        </section>
+        <!-- If not connected -->
+        <section class="navbar__login">
+          <a href="#">Login</a>
+          <a href="#">Sign Up</a>
+        </section>
+      </nav>
     </main>
   </body>
 </html>

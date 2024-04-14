@@ -1,3 +1,4 @@
+// NavBar functions
 function toggleNavigationBar() {
   let navbarMobileContainer = document.querySelector(
     ".navbar__mobile--container"
@@ -10,3 +11,8 @@ function toggleNavigationBar() {
 function closeMobileMenu() {
   document.querySelector(".navbar__mobile--container").style.display = "";
 }
+
+
+// Login status
+let isConnected = false
+

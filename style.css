@@ -24,24 +24,3 @@ html {
 .grid {
     display: grid;
 }
-
-.border {
-    border: 5px solid black;
-}
-
-.input__group {
-    position: relative;
-}
-
-.input__group input {
-    border-radius: 1rem;
-    border       : 1px solid rgba(26, 26, 23, 1);
-    padding      : .6rem .6rem .6rem 2.25rem;
-}
-
-.input__group img {
-    position: absolute;
-    left    : 8px;
-    top     : 8px;
-    width   : 20px;
-}
