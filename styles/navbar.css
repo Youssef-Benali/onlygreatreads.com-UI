@@ -33,8 +33,9 @@
 }
 
 .navbar__login {
-    display : none;
-    position: relative;
+    display    : none;
+    align-items: center;
+    position   : relative;
 }
 
 .navbar__login a {
@@ -45,11 +46,11 @@
     content         : "";
     position        : absolute;
     left            : 0;
-    bottom          : -3px;
+    bottom          : 10px;
     width           : 0;
     height          : 2px;
     background-color: #000;
-    transition      : width 0.3s ease-in-out;
+    transition      : width 0.1s ease-in-out;
 }
 
 .navbar__login_btn:hover::after {
@@ -162,6 +163,7 @@
 }
 
 .dropdown_menu {
+    display         : none;
     position        : absolute;
     transform       : translate(-85%, 20%);
     line-height     : 2rem;
