@@ -13,7 +13,7 @@
 }
 
 .navbar__rightgroup {
-    display: none;
+    display: flex;
 }
 
 .navbar {
@@ -33,6 +33,7 @@
 }
 
 .navbar__login {
+    display : none;
     position: relative;
 }
 
@@ -91,6 +92,17 @@
     width   : 20px;
 }
 
+.profile__picture {
+    margin-right    : .75rem;
+    width           : 26px;
+    height          : 26px;
+    padding         : .5rem;
+    background-color: rgba(242, 240, 233, 1);
+    border-radius   : 50%;
+    background-image: url("../assets/profileimg-example.png");
+    background-size : cover;
+}
+
 .icon {
     margin-right    : .75rem;
     width           : 26px;
@@ -125,7 +137,8 @@
 
 .icon,
 .book__icon,
-.mobile__icon {
+.mobile__icon,
+.profile__picture {
     cursor: pointer;
 }
 
