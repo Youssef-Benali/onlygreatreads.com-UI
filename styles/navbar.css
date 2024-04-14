@@ -99,7 +99,7 @@
     padding         : .5rem;
     background-color: rgba(242, 240, 233, 1);
     border-radius   : 50%;
-    background-image: url("../assets/profileimg-example.png");
+    background-image: url("../assets/profile-picture.svg");
     background-size : cover;
 }
 
