@@ -93,6 +93,7 @@
 }
 
 .profile__picture {
+    position        : relative;
     margin-right    : .75rem;
     width           : 26px;
     height          : 26px;
@@ -146,13 +147,53 @@
     width: 32px;
 }
 
-.user__image {
-    height          : 30px;
-    width           : 30px;
-    padding         : .25rem;
-    border-radius   : 50%;
-    background-color: rgba(242, 240, 233, 1);
+.profile__name p {
+    margin        : 0;
+    display       : flex;
+    flex-direction: column;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.233);
+    margin-bottom : 1rem;
 }
+
+.profile__name small {
+    opacity    : .7;
+    margin-top : -12px;
+    margin-left: 1px;
+}
+
+.dropdown_menu {
+    position        : absolute;
+    transform       : translate(-85%, 20%);
+    line-height     : 2rem;
+    background-color: rgb(211, 210, 206);
+    padding         : .5rem 1.5rem;
+    border-radius   : .25rem;
+}
+
+.dropdown_menu a {
+    white-space: nowrap;
+}
+
+.dropdown_menu a:hover {
+    color: #53A7D8;
+}
+
+.dropdown_menu--container {
+    padding-bottom: 1rem;
+}
+
+.dropdown_menu--item {
+    align-items: center;
+    display    : flex;
+}
+
+.dropdown_menu--item img {
+    width       : 20px;
+    margin-right: 1rem;
+}
+
+.dropdown_menu--item a {}
+
 
 @media screen and (max-width:910px) {
     .navbar {
