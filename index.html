@@ -23,15 +23,30 @@
           alt="Mobile menu icon"
         />
         <section class="navbar__mobile--container">
-          <ul class="navbar__mobile--links">
-            <li class="navbar__mobile--logo">Only Great Reads</li>
-            <li>My books</li>
-            <li>Messages</li>
-            <li>Notifications</li>
-            <li>Friends</li>
-          </ul>
+          <h4 class="navbar__mobile--logo">Only Great Reads</h4>
           <div onclick="closeMobileMenu()" class="navbar__mobile--exitButton">
             <img src="assets/icons/x.svg" alt="Mobile exit button icon" />
+          </div>
+          <div class="navbar__mobile--connected">
+            <div class="profile__name--mobile">
+              <p>Connected as Youssef</p>
+            </div>
+            <ul class="navbar__mobile--links">
+              <li>Gift subscription</li>
+              <li>Account settings</li>
+              <li>View profile</li>
+              <li>Friends</li>
+              <li>My discussions</li>
+              <li>My groups</li>
+              <li onclick="logOut()">Sign out</li>
+            </ul>
+          </div>
+          <!-- Not connected -->
+          <div class="navbar__login--mobile">
+            <a onclick="logIn()" class="navbar__login_btn--mobile" href="#"
+              >Log In</a
+            >
+            <a class="navbar__signup_btn--mobile" href="#">Sign Up</a>
           </div>
         </section>
       </nav>

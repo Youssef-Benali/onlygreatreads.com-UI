@@ -14,6 +14,14 @@ function closeMobileMenu() {
 
 // Login UI interactions
 function logOut() {
+  let navbarLoginMobile = document.querySelector(".navbar__login--mobile");
+  let navbarMenuConnected = document.querySelector(
+    ".navbar__mobile--connected"
+  );
+
+  navbarMenuConnected.style.display = "none";
+  navbarLoginMobile.style.display = "flex";
+
   let navbarLoginLinks = document.querySelector(".navbar__login");
   let navbarConnectedOptions = document.querySelector(".navbar__rightgroup");
   navbarLoginLinks.style.display = "flex";
@@ -21,6 +29,14 @@ function logOut() {
 }
 
 function logIn() {
+  let navbarLoginMobile = document.querySelector(".navbar__login--mobile");
+  let navbarMenuConnected = document.querySelector(
+    ".navbar__mobile--connected"
+  );
+
+  navbarMenuConnected.style.display = "block";
+  navbarLoginMobile.style.display = "none";
+
   let navbarLoginLinks = document.querySelector(".navbar__login");
   let navbarConnectedOptions = document.querySelector(".navbar__rightgroup");
   navbarLoginLinks.style.display = "none";
@@ -28,8 +44,8 @@ function logIn() {
 }
 
 // Dropdown menu interaction
-function toggleDropDownMenu(){
-  let dropDownMenu = document.querySelector(".dropdown_menu")
+function toggleDropDownMenu() {
+  let dropDownMenu = document.querySelector(".dropdown_menu");
 
-  dropDownMenu.style.display = dropDownMenu.style.display === "" ? "block" : ""
+  dropDownMenu.style.display = dropDownMenu.style.display === "" ? "block" : "";
 }
