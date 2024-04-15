@@ -1,3 +1,4 @@
+/* Logo CSS */
 .logo {
     margin-right: 2rem;
     font-weight : bold;
@@ -7,6 +8,7 @@
     margin: 0;
 }
 
+/* Navigation Bar CSS */
 .navbar__leftgroup {
     display    : flex;
     align-items: center;
@@ -100,6 +102,11 @@
     font-weight: bold;
 }
 
+.navbar__mobile--connected {
+    display: none;
+}
+
+/* Search bar CSS */
 .input__group {
     position: relative;
 }
@@ -117,16 +124,12 @@
     width   : 20px;
 }
 
+/* Icons style */
+.icon,
+.book__icon,
+.mobile__icon,
 .profile__picture {
-    position        : relative;
-    margin-right    : .75rem;
-    width           : 26px;
-    height          : 26px;
-    padding         : .5rem;
-    background-color: rgba(242, 240, 233, 1);
-    border-radius   : 50%;
-    background-image: url("../assets/profile-picture.svg");
-    background-size : cover;
+    cursor: pointer;
 }
 
 .icon {
@@ -137,11 +140,19 @@
     border-radius   : 50%;
 }
 
+.icon:hover {
+    background-color: rgb(201, 200, 198);
+}
+
 .book__icon {
     border      : none;
     padding     : 10px 20px;
     cursor      : pointer;
     margin-right: 1rem;
+}
+
+.mobile__icon {
+    width: 32px;
 }
 
 .book__icon::after {
@@ -157,19 +168,17 @@
     width: 100%;
 }
 
-.icon:hover {
-    background-color: rgb(201, 200, 198);
-}
-
-.icon,
-.book__icon,
-.mobile__icon,
+/* Profile name and profile picture style */
 .profile__picture {
-    cursor: pointer;
-}
-
-.mobile__icon {
-    width: 32px;
+    position        : relative;
+    margin-right    : .75rem;
+    width           : 26px;
+    height          : 26px;
+    padding         : .5rem;
+    background-color: rgba(242, 240, 233, 1);
+    border-radius   : 50%;
+    background-image: url("../assets/profile-picture.svg");
+    background-size : cover;
 }
 
 .profile__name--mobile {
@@ -194,6 +203,8 @@
     margin-left: 1px;
 }
 
+
+/* Dropdown Menu */
 .dropdown_menu {
     display         : none;
     position        : absolute;
@@ -226,11 +237,7 @@
     margin-right: 1rem;
 }
 
-.navbar__mobile--connected {
-    display: none;
-}
-
-
+/* Mobile Version */
 @media screen and (max-width:910px) {
     .navbar {
         display: none;
@@ -288,7 +295,7 @@
 
 }
 
-/* NavBar Animation */
+/* Mobile NavBar Animation */
 @keyframes fadeFromLeft {
     0% {
         width  : 0;
