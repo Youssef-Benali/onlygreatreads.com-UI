@@ -1,3 +1,12 @@
+/* Colors */
+:root {
+    --content-color   : rgba(26, 26, 23, 1);
+    --white-color     : #d8dadb;
+    --blue-color      : #2D82b5;
+    --hover-color     : #53A7D8;
+    --background-color: #f9f7f3;
+}
+
 /* Fonts  */
 @font-face {
     font-family: 'Sofia Pro Regular';
@@ -10,8 +19,8 @@
 body,
 html {
     font-family     : "Sofia Pro Regular";
-    background-color: #f9f7f3;
-    color           : rgba(26, 26, 23, 1);
+    background-color: var(--background-color);
+    color           : var(--content-color);
     margin          : 0;
     padding         : 0;
 }
