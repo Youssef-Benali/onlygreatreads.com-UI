@@ -11,122 +11,21 @@
   </head>
   <body>
     <main class="container">
-       <!-- Mobile NavBar -->
- <nav class="navbar__mobile">
-  <div class="logo">
-    <p>Only Great Reads</p>
-  </div>
-  <img
-    onclick="toggleNavigationBar()"
-    class="mobile__icon"
-    src="assets/icons/menu.svg"
-    alt="Mobile menu icon"
-  />
-  <section class="navbar__mobile--container">
-    <h4 class="navbar__mobile--logo">Only Great Reads</h4>
-    <div onclick="closeMobileMenu()" class="navbar__mobile--exitButton">
-      <img src="assets/icons/x.svg" alt="Mobile exit button icon" />
-    </div>
-    <div class="navbar__mobile--connected">
-      <div class="profile__name--mobile">
-        <p>Connected as Youssef</p>
-      </div>
-      <ul class="navbar__mobile--links">
-        <li>Gift subscription</li>
-        <li>Account settings</li>
-        <li>View profile</li>
-        <li>Friends</li>
-        <li>My discussions</li>
-        <li>My groups</li>
-        <li onclick="logOut()">Sign out</li>
-      </ul>
-    </div>
-    <!-- Not connected -->
-    <div class="navbar__login--mobile">
-      <a onclick="logIn()" class="navbar__login_btn--mobile" href="#"
-        >Log In</a
-      >
-      <a class="navbar__signup_btn--mobile" href="#">Sign Up</a>
-    </div>
-  </section>
-</nav>
-
-<!-- Desktop NavBar -->
-<nav class="navbar">
-  <section class="navbar__leftgroup">
-    <div class="logo"><p>Only Great Reads</p></div>
-    <form class="input__group">
-      <img src="assets/icons/search.svg" alt="Search icon" />
-      <input id="friends" type="text" placeholder="Search friends..." />
-    </form>
-  </section>
-
-  <!-- If connected -->
-  <section class="navbar__rightgroup">
-    <div class="navbar__links">
-      <div class="book__icon">My Books</div>
-      <img
-        class="icon"
-        src="assets/icons/message-circle.svg"
-        alt="Message icon"
-      />
-      <img
-        class="icon"
-        src="assets/icons/bell.svg"
-        alt="Notification icon"
-      />
-      <img class="icon" src="assets/icons/users.svg" alt="Friends icon" />
-      <div onclick="toggleDropDownMenu()" class="profile__picture">
-        <div class="dropdown_menu">
-          <div class="profile__name">
-            <p>
-              Youssef
-              <small>user</small>
-            </p>
+      <section class="home grid">
+        <article>
+          <div class="headers">
+            <h1>+18,400,000 Library Books</h1>
+            <h1>Books handpicked by knowledgeable people</h1>
           </div>
-          <div class="dropdown_menu--container">
-            <div class="dropdown_menu--item">
-              <img src="assets/icons/gift.svg" alt="Gift icon" />
-              <a href="#">Gift subscription</a>
-            </div>
-            <div class="dropdown_menu--item">
-              <img src="assets/icons/settings.svg" alt="Gift icon" />
-              <a href="#">Account settings</a>
-            </div>
-            <div class="dropdown_menu--item">
-              <img src="assets/icons/folder.svg" alt="Gift icon" />
-              <a href="#">View profile</a>
-            </div>
-            <div class="dropdown_menu--item">
-              <img src="assets/icons/user.svg" alt="Gift icon" />
-              <a href="#">Friends</a>
-            </div>
-            <div class="dropdown_menu--item">
-              <img
-                src="assets/icons/message-square.svg"
-                alt="Gift icon"
-              />
-              <a href="#">My discussions</a>
-            </div>
-            <div class="dropdown_menu--item">
-              <img src="assets/icons/folder.svg" alt="Gift icon" />
-              <a href="#">My groups</a>
-            </div>
-            <div class="dropdown_menu--item">
-              <img src="assets/icons/log-out.svg" alt="Gift icon" />
-              <a onclick="logOut()" href="#">Sign Out</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- If not connected -->
-  <section class="navbar__login">
-    <a onclick="logIn()" class="navbar__login_btn" href="#">Log In</a>
-    <a class="navbar__signup_btn" href="#">Sign Up</a>
-  </section>
-</nav>
+          <p class="home__content">
+            We recommend great reads from a library of +18.4 million books to
+            our registred members
+          </p>
+          <button class="btn btn-primary">Learn More</button>
+        </article>
+
+        <article></article>
+      </section>
     </main>
   </body>
 </html>

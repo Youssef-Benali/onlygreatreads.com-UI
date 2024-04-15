@@ -25,3 +25,18 @@ a {
     max-width: 1280px;
     margin   : 0 auto;
 }
+
+/* Buttons */
+
+.btn {
+    border       : none;
+    color        : inherit;
+    padding      : .75rem 2rem;
+    border-radius: .5rem;
+    font-weight  : bold;
+}
+
+.btn-primary {
+    background-color: blue;
+    color           : white;
+}
