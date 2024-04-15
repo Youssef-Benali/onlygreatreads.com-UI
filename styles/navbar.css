@@ -15,7 +15,7 @@
 }
 
 .navbar__rightgroup {
-    display: flex;
+    display: none;
 }
 
 .navbar {
@@ -59,7 +59,7 @@
 }
 
 .navbar__login {
-    display    : none;
+    display    : flex;
     align-items: center;
     position   : relative;
 }

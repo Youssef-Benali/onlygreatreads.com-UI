@@ -35,8 +35,17 @@ a {
     margin   : 0 auto;
 }
 
-/* Buttons */
+/* grid */
 
+.grid {
+    display: grid;
+}
+
+.grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Buttons */
 .btn {
     border       : none;
     color        : inherit;
