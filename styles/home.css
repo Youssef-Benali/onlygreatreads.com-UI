@@ -1,13 +1,48 @@
 .home {
+    height         : 60vh;
+    padding        : 0 2rem;
     justify-content: center;
     align-items    : center;
     justify-items  : center;
 }
 
-.home__content {
-    font-size: 1.5rem;
-}
-
 .headers h1 {
     font-size: 3rem;
+}
+
+.header__title--highlight {
+    color: var(--blue-color);
+}
+
+.header__title {
+    margin: 0rem 0rem 1rem 0;
+}
+
+.header__subtitle {
+    margin: 0 0 1.75rem 0;
+}
+
+.home__content {
+    font-size: 1.5rem;
+    margin   : 0 0 1rem 0;
+}
+
+.home__image {
+    width           : 500px;
+    height          : 500px;
+    display         : block;
+    background-image: url("../assets/homepage-image.png");
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .headers h1 {
+        font-size: 2rem;
+    }
+
+    .home__content {
+        font-size: 1rem;
+    }
+
 }

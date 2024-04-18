@@ -242,7 +242,7 @@
 }
 
 /* Mobile Version */
-@media screen and (max-width:910px) {
+@media screen and (max-width:768px) {
     .navbar {
         display: none;
     }

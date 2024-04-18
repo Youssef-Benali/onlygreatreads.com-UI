@@ -55,6 +55,13 @@ a {
 }
 
 .btn-primary {
-    background-color: blue;
-    color           : white;
+    background-color: var(--blue-color);
+    color           : var(--background-color);
+}
+
+/* Responsive  */
+@media screen and (max-width: 768px) {
+    .grid--1x2 {
+        grid-template-columns: 1fr;
+    }
 }
