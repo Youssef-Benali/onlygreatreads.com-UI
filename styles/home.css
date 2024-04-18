@@ -24,25 +24,46 @@
 
 .home__content {
     font-size: 1.5rem;
-    margin   : 0 0 1rem 0;
+    margin   : 0 0 2.25rem 0;
 }
 
-.home__image {
-    width           : 500px;
-    height          : 500px;
-    display         : block;
-    background-image: url("../assets/homepage-image.png");
+.home__image img {
+    width: 100%;
 }
 
 
 /* Responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
     .headers h1 {
-        font-size: 2rem;
+        font-size: 2.35rem;
     }
 
     .home__content {
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        padding: 2rem;
     }
 
+    .home__image {
+        padding: 3rem 4rem 0 4rem;
+    }
+
+    .headers h1 {
+        font-size: 2.25rem;
+    }
+
+    .home__content {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .home__image {
+        padding: 3rem 1rem 0 1rem;
+    }
 }

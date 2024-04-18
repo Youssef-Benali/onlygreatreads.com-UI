@@ -52,6 +52,7 @@ a {
     padding      : .75rem 2rem;
     border-radius: .5rem;
     font-weight  : bold;
+    font-size    : .9rem;
 }
 
 .btn-primary {
