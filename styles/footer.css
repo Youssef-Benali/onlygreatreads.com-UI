@@ -1,0 +1,38 @@
+/* footer */
+.footer {
+    padding  : 2.5rem 0;
+    margin   : 0 auto;
+    max-width: 1280px;
+}
+
+.footer__container {
+    padding-bottom: 3rem;
+}
+
+.footer__description {
+    display       : flex;
+    flex-direction: column;
+}
+
+.footer__description h3 {
+    color : var(--content-color);
+    height: 40px;
+}
+
+.footer__description a {
+    opacity: .8;
+    padding: .75rem 0;
+}
+
+.footer__details {
+    opacity: .8;
+    display: flex;
+}
+
+.footer__details p {
+    margin-right: 2rem;
+}
+
+.social_icon {
+    width: 18px;
+}

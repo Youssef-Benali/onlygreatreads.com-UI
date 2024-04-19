@@ -49,6 +49,10 @@ a {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.grid--1x2-footer {
+    grid-template-columns: 45fr 55fr;
+}
+
 .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
 }
