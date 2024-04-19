@@ -47,6 +47,7 @@ a {
 
 /* Buttons */
 .btn {
+    cursor       : pointer;
     border       : none;
     color        : inherit;
     padding      : .75rem 2rem;
@@ -58,6 +59,11 @@ a {
 .btn-primary {
     background-color: var(--blue-color);
     color           : var(--background-color);
+    transition      : background-color .2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #095a8d;
 }
 
 /* Responsive  */
