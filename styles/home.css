@@ -56,6 +56,85 @@
     padding-right: 1rem;
 }
 
+/* Homepage Buying options */
+.plans {
+    gap       : 1rem;
+    padding   : 2rem 0;
+    text-align: center;
+}
+
+.plan__option {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+    height          : 450px;
+    border-radius   : .25rem;
+    padding         : 1.5rem 3rem;
+    border          : 1px solid var(--white-color);
+    background-color: var(--background-color-section);
+}
+
+.plan__option--description p {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+
+}
+
+.plan__option--text {
+    text-align: left;
+    font-size : 1.15rem;
+    border-top: 1px solid rgba(7, 7, 7, 0.286);
+    padding   : 1rem 0;
+}
+
+.option__text--best {
+    border-top: 1px solid rgba(253, 253, 253, 0.527);
+}
+
+/* .last__option {
+    border-bottom: 1px solid rgba(7, 7, 7, 0.288);
+} */
+
+.plan__option h1,
+.plan__option h2 {
+    margin: 0;
+}
+
+.plan__option h2 {
+    color: var(--blue-color);
+}
+
+.plan__option h1 {
+    padding: 1.5rem 0;
+}
+
+.plan__option--detail {
+    font-size     : 1rem;
+    padding-bottom: 2rem;
+}
+
+
+
+.plan__option--best h2 {
+    color: var(--background-color-section);
+}
+
+.plan__option--best {
+    color           : var(--background-color-section);
+    background-color: var(--blue-color);
+}
+
+/* Icons */
+.info__icon {
+    width: 18px;
+}
+
+.info__icon:hover {
+    cursor: pointer;
+}
+
+
 /* Responsive */
 @media screen and (max-width: 968px) {
     .headers h1 {

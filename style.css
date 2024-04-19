@@ -70,8 +70,32 @@ a {
     transition      : background-color .2s ease-in-out;
 }
 
+.btn-secondary {
+    border-radius   : 0;
+    border          : 1px solid var(--content-color);
+    width           : 100%;
+    background-color: var(--background-color-section);
+    transition      : border .2s ease-in-out, background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.btn-secondary--best {
+    color           : var(--content-color);
+    background-color: var(--background-color-section);
+}
+
 .btn-primary:hover {
     background-color: #095a8d;
+}
+
+.btn-secondary:hover {
+    color           : var(--background-color);
+    background-color: var(--hover-color);
+}
+
+.btn-secondary--best:hover {
+    border-color    : var(--background-color-section);
+    color           : var(--background-color-section);
+    background-color: var(--blue-color);
 }
 
 /* Responsive  */
