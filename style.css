@@ -1,10 +1,11 @@
 /* Colors */
 :root {
-    --content-color   : rgba(26, 26, 23, 1);
-    --white-color     : #d8dadb;
-    --blue-color      : #2D82b5;
-    --hover-color     : #53A7D8;
-    --background-color: #f9f7f3;
+    --content-color           : rgba(26, 26, 23, 1);
+    --white-color             : #d8dadb;
+    --blue-color              : #2D82b5;
+    --hover-color             : #53A7D8;
+    --background-color        : #f9f7f3;
+    --background-color-section: rgb(255, 255, 255);
 }
 
 /* Fonts  */
@@ -18,9 +19,9 @@
 /* General CSS */
 body,
 html {
-    font-family     : "Sofia Pro Regular";
     background-color: var(--background-color);
     color           : var(--content-color);
+    font-family     : "Sofia Pro Regular";
     margin          : 0;
     padding         : 0;
 }
@@ -35,8 +36,11 @@ a {
     margin   : 0 auto;
 }
 
-/* grid */
+.container--transition {
+    background-color: var(--background-color-section);
+}
 
+/* grid */
 .grid {
     display: grid;
 }
@@ -45,15 +49,19 @@ a {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 /* Buttons */
 .btn {
-    cursor       : pointer;
     border       : none;
-    color        : inherit;
-    padding      : .75rem 2rem;
     border-radius: .5rem;
-    font-weight  : bold;
+    color        : inherit;
+    cursor       : pointer;
     font-size    : .9rem;
+    font-weight  : bold;
+    padding      : .75rem 2rem;
 }
 
 .btn-primary {
@@ -67,6 +75,12 @@ a {
 }
 
 /* Responsive  */
+@media screen and (max-width: 968px) {
+    .grid--1x3 {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .grid--1x2 {
         grid-template-columns: 1fr;
