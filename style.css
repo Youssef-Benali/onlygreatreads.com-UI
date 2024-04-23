@@ -57,6 +57,10 @@ a {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.grid--1x4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 /* Buttons */
 .btn {
     border       : none;
@@ -107,10 +111,17 @@ a {
     .grid--1x3 {
         grid-template-columns: 1fr;
     }
+
+    .grid--1x4 {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .grid--1x2 {
+    .grid--1x2,
+    .grid--1x3,
+    .grid--1x4 {
         grid-template-columns: 1fr;
     }
+
 }

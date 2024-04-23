@@ -11,355 +11,63 @@
     <title>Only Great Reads - UI</title>
   </head>
   <body>
-    <!-- Navigation bar -->
-    <!-- Mobile NavBar -->
-    <div class="container">
-      <nav class="navbar__mobile">
-        <div class="logo">
-          <p>Only Great Reads</p>
-        </div>
-        <img
-          onclick="toggleNavigationBar()"
-          class="mobile__icon"
-          src="assets/icons/menu.svg"
-          alt="Mobile menu icon"
-        />
-        <section class="navbar__mobile--container">
-          <h4 class="navbar__mobile--logo">Only Great Reads</h4>
-          <div onclick="closeMobileMenu()" class="navbar__mobile--exitButton">
-            <img src="assets/icons/x.svg" alt="Mobile exit button icon" />
-          </div>
-          <div class="navbar__mobile--connected">
-            <div class="profile__name--mobile">
-              <p>Connected as Youssef</p>
-            </div>
-            <ul class="navbar__mobile--links">
-              <li>Gift subscription</li>
-              <li>Account settings</li>
-              <li>View profile</li>
-              <li>Friends</li>
-              <li>My discussions</li>
-              <li>My groups</li>
-              <li onclick="logOut()">Sign out</li>
-            </ul>
-          </div>
-          <!-- Not connected -->
-          <div class="navbar__login--mobile">
-            <a onclick="logIn()" class="navbar__login_btn--mobile" href="#"
-              >Log In</a
-            >
-            <a class="navbar__signup_btn--mobile" href="#">Sign Up</a>
-          </div>
-        </section>
-      </nav>
-      <!-- Desktop NavBar -->
-      <nav class="navbar">
-        <section class="navbar__leftgroup">
-          <div class="logo"><p>Only Great Reads</p></div>
-          <form class="input__group">
-            <img src="assets/icons/search.svg" alt="Search icon" />
-            <input id="friends" type="text" placeholder="Search friends..." />
-          </form>
-        </section>
-        <!-- If connected -->
-        <section class="navbar__rightgroup">
-          <div class="navbar__links">
-            <div class="book__icon">My Books</div>
-            <img
-              class="icon"
-              src="assets/icons/message-circle.svg"
-              alt="Message icon"
-            />
-            <img
-              class="icon"
-              src="assets/icons/bell.svg"
-              alt="Notification icon"
-            />
-            <img class="icon" src="assets/icons/users.svg" alt="Friends icon" />
-            <div onclick="toggleDropDownMenu()" class="profile__picture">
-              <div class="dropdown_menu">
-                <div class="profile__name">
-                  <p>
-                    Youssef
-                    <small>user</small>
-                  </p>
-                </div>
-                <div class="dropdown_menu--container">
-                  <div class="dropdown_menu--item">
-                    <img src="assets/icons/gift.svg" alt="Gift icon" />
-                    <a href="#">Gift subscription</a>
-                  </div>
-                  <div class="dropdown_menu--item">
-                    <img src="assets/icons/settings.svg" alt="Gift icon" />
-                    <a href="#">Account settings</a>
-                  </div>
-                  <div class="dropdown_menu--item">
-                    <img src="assets/icons/folder.svg" alt="Gift icon" />
-                    <a href="#">View profile</a>
-                  </div>
-                  <div class="dropdown_menu--item">
-                    <img src="assets/icons/user.svg" alt="Gift icon" />
-                    <a href="#">Friends</a>
-                  </div>
-                  <div class="dropdown_menu--item">
-                    <img
-                      src="assets/icons/message-square.svg"
-                      alt="Gift icon"
-                    />
-                    <a href="#">My discussions</a>
-                  </div>
-                  <div class="dropdown_menu--item">
-                    <img src="assets/icons/folder.svg" alt="Gift icon" />
-                    <a href="#">My groups</a>
-                  </div>
-                  <div class="dropdown_menu--item">
-                    <img src="assets/icons/log-out.svg" alt="Gift icon" />
-                    <a onclick="logOut()" href="#">Sign Out</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- If not connected -->
-        <section class="navbar__login">
-          <a onclick="logIn()" class="navbar__login_btn" href="#">Log In</a>
-          <a class="navbar__signup_btn" href="#">Sign Up</a>
-        </section>
-      </nav>
-    </div>
-
-    <!-- Homepage - Hero Page -->
-    <div class="container">
-      <section class="home grid grid--1x2">
-        <article>
-          <div class="headers">
-            <h1 class="header__title">
-              <span class="header__title--highlight">+18,400,000</span> Library
-              Books
-            </h1>
-            <h1 class="header__subtitle">
-              Books handpicked by knowledgeable people
-            </h1>
-          </div>
-          <p class="home__content">
-            We recommend great reads from a library of +18.4 million books to
-            our registred members
-          </p>
-          <button class="btn btn-primary">Learn More</button>
-        </article>
-        <article class="home__image">
-          <img src="/assets/homepage-image.png" alt="Library with books" />
-        </article>
-      </section>
-    </div>
-
-    <!-- Homepage - Home Cards Section -->
-    <div class="container--transition">
-      <section class="home__cards grid grid--1x3">
-        <article class="card">
-          <h1>What do we exactly provide to our registered members?</h1>
-          <p>
-            Each month on the 1st and the 15th, you get a book suggestion with a
-            very short description of the litterary value of the book
-            suggested.(Five sentences on average) We provide you with two kinds
-            of suggestions: 'Books worth reading' and 'Great reads'. The
-            subscription fees are US $3.65 per year; in other words, it's 1
-            penny per day
-          </p>
-        </article>
-        <article class="card">
-          <h1>Our Criteria for defining a great read</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-            quo recusandae quos facilis accusantium debitis voluptates a
-            doloremque temporibus similique.
-          </p>
-        </article>
-        <article class="card">
-          <h1>Only Great Reads Philosophy</h1>
-          <p>
-            In the early stage when Only Great Reads was founded, the idea was
-            to provide the registred subscribers with only great reads as book
-            suggestions.Since we placed the bar of quality on how we define a
-            great read at the highest point we could think of, and after an
-            extensive research by our team, we couldn't find as many great reads
-            as we thought we would. Then, we included the other kind of book
-            suggestion 'Books Worth Reading' besides 'Great Reads'. Ultimately,
-            our philosophy is to be able at some point in time to provide our
-            subscribers only with 'Great Reads' as books recommendations. By
-            becoming a registred subscriber, you give life to bringing to
-            fruition the vision of Only Great Reads to the world.
-          </p>
-        </article>
-      </section>
-    </div>
-
-    <!-- Buying options section -->
-    <div class="container">
-      <section class="plans card">
-        <h1 class="plans__header">Get One-Time Book Suggestion(s)</h1>
-
-        <div class="plans grid grid--1x3">
-          <article class="plan__option">
-            <div>
-              <h2>1 Book</h2>
-              <h1>1$</h1>
-              <p class="plan__option--detail">Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="plan__option--description last__option">
-              <p class="plan__option--text">
-                Lorem, ipsum
-                <img
-                  class="info__icon"
-                  src="assets/icons/info.svg"
-                  alt="Info icon"
-                />
-              </p>
-              <p class="plan__option--text">
-                Lorem, ipsum
-                <img
-                  class="info__icon"
-                  src="assets/icons/info.svg"
-                  alt="Info icon"
-                />
-              </p>
-              <p class="plan__option--text">
-                Lorem, ipsum
-                <img
-                  class="info__icon"
-                  src="assets/icons/info.svg"
-                  alt="Info icon"
-                />
-              </p>
-            </div>
-            <button class="btn btn-secondary">Buy</button>
-          </article>
-          <article class="plan__option plan__option--best">
-            <div>
-              <h2>2 Books</h2>
-              <h1>2.5$</h1>
-              <p class="plan__option--detail">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="plan__option--description last__option">
-              <p class="plan__option--text option__text--best">
-                Lorem, ipsum
-                <img
-                  class="info__icon"
-                  src="assets/icons/info-best.svg"
-                  alt="Info icon"
-                />
-              </p>
-              <p class="plan__option--text option__text--best">
-                Lorem, ipsum
-                <img
-                  class="info__icon"
-                  src="assets/icons/info-best.svg"
-                  alt="Info icon"
-                />
-              </p>
-              <p class="plan__option--text option__text--best">
-                Lorem, ipsum
-                <img
-                  class="info__icon"
-                  src="assets/icons/info-best.svg"
-                  alt="Info icon"
-                />
-              </p>
-            </div>
-            <button class="btn btn-secondary btn-secondary--best">Buy</button>
-          </article>
-          <article class="plan__option">
-            <div>
-              <h2>3 Books</h2>
-              <h1>5$</h1>
-              <p class="plan__option--detail">
-                Lorem ipsum dolor sit amet consectetur.
-              </p>
-            </div>
-            <div class="plan__option--description last__option">
-              <p class="plan__option--text">
-                Lorem, ipsum
-                <img
-                  class="info__icon"
-                  src="assets/icons/info.svg"
-                  alt="Info icon"
-                />
-              </p>
-              <p class="plan__option--text">
-                Lorem, ipsum<img
-                  class="info__icon"
-                  src="assets/icons/info.svg"
-                  alt="Info icon"
-                />
-              </p>
-              <p class="plan__option--text">
-                Lorem, ipsum<img
-                  class="info__icon"
-                  src="assets/icons/info.svg"
-                  alt="Info icon"
-                />
-              </p>
-            </div>
-            <button class="btn btn-secondary">Buy</button>
-          </article>
-        </div>
-      </section>
-    </div>
-    <!-- Footer -->
     <div class="container--transition">
       <footer class="footer">
-        <section class="footer__container grid grid--1x2-footer">
-          <section>
-            <h3>OnlyGreatReads</h3>
-          </section>
-          <section class="grid grid--1x3">
+        <section class="footer__container">
+          <section class="grid grid--1x4">
             <article class="footer__description">
               <h3>OnlyGreatReads.com COMPANY</h3>
-              <a href="#">Our Mission</a>
               <a href="#">About Us</a>
+              <a href="#">Our Mission</a>
+              <a href="#">Our Philosophy</a>
               <a href="#">Contact Us</a>
             </article>
             <article class="footer__description">
-              <h3>WORK WITH OnlyGreatReads.com</h3>
+              <h3>Work With Us</h3>
               <a href="#">Advertise</a>
-              <a href="#">Authors Program</a>
               <a href="#">We Hire</a>
             </article>
             <article class="footer__description">
+              <h3>Authors Program</h3>
+              <a href="#">Authors Program</a>
+            </article>
+            <article class="footer__description">
               <h3>Links</h3>
-              <a href="#">www.onlygreatmovies.com</a>
-              <a href="#">www.onlygreatvideogames.com</a>
+              <a href="#">www.onlygreatreads.com</a>
             </article>
           </section>
         </section>
         <section class="footer__details">
-          <p>© 2017 - 2024, OnlyGreatReads.com, Inc.</p>
-          <p>Terms of Service</p>
-          <p>Privacy Policy</p>
-          <p>Vulnerability Disclosure Policy</p>
-          <p>Information Collection Notice</p>
-          <p>
-            <img
-              class="social_icon"
-              src="assets/icons/facebook.svg"
-              alt="Facebook Icon"
-            />
-          </p>
-          <p>
-            <img
-              class="social_icon"
-              src="assets/icons/instagram.svg"
-              alt="Instagram Icon"
-            />
-          </p>
-          <p>
-            <img
-              class="social_icon"
-              src="assets/icons/twitter.svg"
-              alt="Twitter Icon"
-            />
-          </p>
+          <div class="details--social">
+            <p>
+              <img
+                class="social_icon"
+                src="assets/icons/facebook.svg"
+                alt="Facebook Icon"
+              />
+            </p>
+            <p>
+              <img
+                class="social_icon"
+                src="assets/icons/instagram.svg"
+                alt="Instagram Icon"
+              />
+            </p>
+            <p>
+              <img
+                class="social_icon"
+                src="assets/icons/twitter.svg"
+                alt="Twitter Icon"
+              />
+            </p>
+          </div>
+          <div class="details--copyright">
+            <p>© 2017 - 2024, OnlyGreatReads.com, Inc.</p>
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>Vulnerability Disclosure Policy</p>
+            <p>Information Collection Notice</p>
+          </div>
         </section>
       </footer>
     </div>
