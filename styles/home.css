@@ -141,15 +141,18 @@
         font-size: 2.35rem;
     }
 
+    .home {
+        height        : 100vh;
+        padding-bottom: 10rem;
+    }
+
     .home__content {
         font-size: 1.5rem;
     }
+    
 }
 
 @media screen and (max-width: 768px) {
-    .home {
-        padding: 2rem;
-    }
 
     .home__image {
         padding: 3rem 4rem 0 4rem;
