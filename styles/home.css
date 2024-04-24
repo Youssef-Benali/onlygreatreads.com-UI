@@ -149,11 +149,14 @@
     .home__content {
         font-size: 1.5rem;
     }
-    
+
+    .card {
+        padding: 0 2rem;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
-
     .home__image {
         padding: 3rem 4rem 0 4rem;
     }
@@ -166,6 +169,10 @@
         font-size: 1.25rem;
     }
 
+    .plans {
+        margin: 0 auto;
+        width : 450px;
+    }
 }
 
 @media screen and (max-width: 500px) {
