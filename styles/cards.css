@@ -1,0 +1,44 @@
+/* Homepage Cards */
+.home__cards {
+    gap      : 1rem;
+    margin   : 0 auto;
+    max-width: 1280px;
+    padding  : 3rem 0;
+}
+
+.card {
+    padding: 0 1rem;
+}
+
+.card h1 {
+    font-size    : 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    margin       : 0;
+    font-size    : 1.2rem;
+    padding-right: 1rem;
+}
+
+/* Icons */
+.info__icon {
+    width: 18px;
+}
+
+.info__icon:hover {
+    cursor: pointer;
+}
+
+/* Best plan choice */
+.option__text--best {
+    border-top: 1px solid rgba(253, 253, 253, 0.527);
+}
+
+
+/* Responsive */
+@media screen and (max-width: 968px) {
+    .card {
+        padding: 0 2rem;
+    }
+}
