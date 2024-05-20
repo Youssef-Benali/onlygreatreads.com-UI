@@ -1,0 +1,67 @@
+<!-- Simple JS Function "toggleFormOptions" is in scripts.js  -->
+    <!-- Login Form -->
+    <div class="container container--centered">
+      <form class="login" action="">
+        <div class="login__options">
+          <h4 onclick="toggleFormOptions('login')" class="active--option">Login</h4>
+          <h4 onclick="toggleFormOptions('register')">Register</h4>
+        </div>
+        <div class="login--option">
+          <label class="login__label" for="email">Email</label>
+          <input
+            class="login__input"
+            placeholder="Email"
+            type="text"
+            name="email"
+            id="email"
+          />
+          <label class="login__label" for="password">Password</label>
+          <input
+            class="login__input"
+            placeholder="Password"
+            type="password"
+            name="password"
+            id="password"
+          />
+        </div>
+
+        <div class="register--option">
+          <label class="login__label" for="email">Email</label>
+          <input
+            class="login__input"
+            placeholder="Email"
+            type="text"
+            name="email"
+            id="email"
+          />
+          <label class="login__label" for="username">Username</label>
+          <input
+            class="login__input"
+            placeholder="Username"
+            type="text"
+            name="username"
+            id="username"
+          />
+          <label class="login__label" for="password">Password</label>
+          <input
+            class="login__input"
+            placeholder="Password"
+            type="password"
+            name="password"
+            id="password"
+          />
+          <label class="login__label" for="confirmPassword">Confirm password</label>
+          <input
+            class="login__input"
+            placeholder="Confirm password"
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+          />
+        </div>
+        <div class="login__buttons">
+          <button class="login__button" type="button">Log In</button>
+          <a class="login__forgotpwd" href="#">Forgot Password?</a>
+        </div>
+      </form>
+    </div>

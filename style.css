@@ -12,8 +12,23 @@
 @font-face {
     font-family: 'Sofia Pro Regular';
     font-style : normal;
-    font-weight: normal;
+    font-weight: 500;
     src        : local('Sofia Pro Regular'), url('fonts/Sofia Pro Regular Az.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Sofia Pro Light';
+    font-style : normal;
+    font-weight: 400;
+    src        : local('Sofia Pro Light'), url('fonts/Sofia Pro Light Az.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Sofia Pro ExtraLight';
+    font-style : normal;
+    font-weight: 300;
+    src        : local('Sofia Pro ExtraLight'), url('fonts/Sofia Pro ExtraLight Az.woff') format('woff');
 }
 
 /* General CSS */
@@ -38,6 +53,11 @@ a {
 
 .container--transition {
     background-color: var(--background-color-section);
+}
+
+.container--centered {
+    display        : flex;
+    justify-content: center;
 }
 
 /* grid */
@@ -105,6 +125,14 @@ a {
     color           : var(--background-color-section);
     background-color: var(--blue-color);
 }
+
+/* Active links or buttons */
+.active--option {
+    font-weight  : bold;
+    color        : var(--blue-color);
+    border-bottom: 2px solid rgba(18, 80, 130, 0.6);
+}
+
 
 /* Responsive  */
 @media screen and (max-width: 968px) {

@@ -49,3 +49,29 @@ function toggleDropDownMenu() {
 
   dropDownMenu.style.display = dropDownMenu.style.display === "" ? "block" : "";
 }
+
+// Forms logic
+function toggleFormOptions(option) {
+  let register = document.querySelector(".register--option");
+  let login = document.querySelector(".login--option");
+  let loginTitles = document.querySelector(".login__options");
+
+  let loginTitle = loginTitles.querySelector("h4");
+  let logoutTitle = loginTitles.querySelector("h4:nth-child(2)");
+
+  if (option == "login") {
+    loginTitle.classList.add("active--option");
+    logoutTitle.classList.remove("active--option");
+    register.style.display = "none";
+    login.style.display = "inherit";
+    login.style.justifyContent = "inherit";
+    login.style.flexDirection = "inherit";
+  } else {
+    logoutTitle.classList.add("active--option");
+    loginTitle.classList.remove("active--option");
+    login.style.display = "none";
+    register.style.display = "inherit";
+    register.style.justifyContent = "inherit";
+    register.style.flexDirection = "inherit";
+  }
+}

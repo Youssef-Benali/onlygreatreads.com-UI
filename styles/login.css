@@ -1,6 +1,89 @@
 .login {
+    background-color: var(--background-color-section);
+    padding         : 0rem 2.5rem 2.5rem 2.5rem;
+    margin-top      : 3.5rem;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    border-radius   : 0.45rem;
+}
+
+.login__options {
+    margin : 1rem 0;
+    display: flex;
+}
+
+.login--option {
+    display        : inherit;
+    justify-content: inherit;
+    flex-direction : inherit;
+}
+
+.register--option {
+    display: none;
+}
+
+
+.login__options h4 {
+    font-family   : "Sofia Pro ExtraLight";
+    margin-right  : 1.5rem;
+    padding-bottom: .25rem;
+    opacity       : .8;
+    cursor        : pointer;
+}
+
+
+
+.login__label {
+    display: none;
+}
+
+.login__input {
+    width        : 250px;
+    background   : none;
+    border       : none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.300);
+    padding      : .50rem .33rem;
+    margin-bottom: 1.25rem;
+}
+
+.login__input:focus {
+    outline      : none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.600);
+}
+
+.login__input::placeholder {
+    opacity: .65;
+}
+
+.login__buttons {
+    margin-top    : .75rem;
     display       : flex;
     flex-direction: column;
-    width         : -moz-fit-content;
-    width         : fit-content;
+}
+
+.login__button {
+    cursor          : pointer;
+    border-radius   : .75rem;
+    padding         : .66rem;
+    border          : none;
+    background-color: var(--blue-color);
+    color           : var(--background-color-section);
+    font-weight     : bold;
+}
+
+.login__forgotpwd {
+    text-align : center;
+    margin-top : 1.5rem;
+    font-family: "Sofia Pro Light";
+    font-size  : .9rem;
+    opacity    : .75;
+}
+
+/* REsponsive */
+
+@media screen and (max-width: 968px) {
+    .login__input {
+        width: 200px;
+    }
 }
