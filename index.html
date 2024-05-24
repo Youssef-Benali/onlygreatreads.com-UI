@@ -1,19 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/navbar.css" />
-    <link rel="stylesheet" href="styles/home.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/plans.css" />
-    <link rel="stylesheet" href="styles/cards.css" />
-    <link rel="stylesheet" href="styles/login.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="scripts.js"></script>
-    <title>Only Great Reads - UI</title>
-  </head>
-  <body>
-     
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/navbar.css" />
+  <link rel="stylesheet" href="styles/home.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/plans.css" />
+  <link rel="stylesheet" href="styles/cards.css" />
+  <link rel="stylesheet" href="styles/login.css" />
+  <link rel="stylesheet" href="styles/bookPage.css" />
+  <link rel="stylesheet" href="styles/bookDetails.css" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="scripts.js"></script>
+  <title>Only Great Reads - UI</title>
+</head>
+
+<body>
+  <!-- Mobile NavBar -->
+  <div class="container">
+    <nav class="navbar__mobile">
+      <div class="logo">
+        <p>Only Great Reads</p>
+      </div>
+      <img onclick="toggleNavigationBar()" class="mobile__icon" src="assets/icons/menu.svg" alt="Mobile menu icon" />
+      <section class="navbar__mobile--container">
+        <h4 class="navbar__mobile--logo">Only Great Reads</h4>
+        <div onclick="closeMobileMenu()" class="navbar__mobile--exitButton">
+          <img src="assets/icons/x.svg" alt="Mobile exit button icon" />
+        </div>
+        <div class="navbar__mobile--connected">
+          <div class="profile__name--mobile">
+            <p>Connected as Youssef</p>
+          </div>
+          <ul class="navbar__mobile--links">
+            <li>Gift subscription</li>
+            <li>Account settings</li>
+            <li>View profile</li>
+            <li>Friends</li>
+            <li>My discussions</li>
+            <li>My groups</li>
+            <li onclick="logOut()">Sign out</li>
+          </ul>
+        </div>
+        <!-- Not connected -->
+        <div class="navbar__login--mobile">
+          <a onclick="logIn()" class="navbar__login_btn--mobile" href="#">Log In</a>
+          <a class="navbar__signup_btn--mobile" href="#">Sign Up</a>
+        </div>
+      </section>
+    </nav>
+
+    <!-- Desktop NavBar -->
+    <nav class="navbar">
+      <section class="navbar__leftgroup">
+        <div class="logo">
+          <p>Only Great Reads</p>
+        </div>
+        <form class="input__group">
+          <img src="assets/icons/search.svg" alt="Search icon" />
+          <input id="friends" type="text" placeholder="Search friends..." />
+        </form>
+      </section>
+
+      <!-- If connected -->
+      <section class="navbar__rightgroup">
+        <div class="navbar__links">
+          <div class="book__icon">My Books</div>
+          <img class="icon" src="assets/icons/message-circle.svg" alt="Message icon" />
+          <img class="icon" src="assets/icons/bell.svg" alt="Notification icon" />
+          <img class="icon" src="assets/icons/users.svg" alt="Friends icon" />
+          <div onclick="toggleDropDownMenu()" class="profile__picture">
+            <div class="dropdown_menu">
+              <div class="profile__name">
+                <p>
+                  Youssef
+                  <small>user</small>
+                </p>
+              </div>
+              <div class="dropdown_menu--container">
+                <div class="dropdown_menu--item">
+                  <img src="assets/icons/gift.svg" alt="Gift icon" />
+                  <a href="#">Gift subscription</a>
+                </div>
+                <div class="dropdown_menu--item">
+                  <img src="assets/icons/settings.svg" alt="Gift icon" />
+                  <a href="#">Account settings</a>
+                </div>
+                <div class="dropdown_menu--item">
+                  <img src="assets/icons/folder.svg" alt="Gift icon" />
+                  <a href="#">View profile</a>
+                </div>
+                <div class="dropdown_menu--item">
+                  <img src="assets/icons/user.svg" alt="Gift icon" />
+                  <a href="#">Friends</a>
+                </div>
+                <div class="dropdown_menu--item">
+                  <img src="assets/icons/message-square.svg" alt="Gift icon" />
+                  <a href="#">My discussions</a>
+                </div>
+                <div class="dropdown_menu--item">
+                  <img src="assets/icons/folder.svg" alt="Gift icon" />
+                  <a href="#">My groups</a>
+                </div>
+                <div class="dropdown_menu--item">
+                  <img src="assets/icons/log-out.svg" alt="Gift icon" />
+                  <a onclick="logOut()" href="#">Sign Out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- If not connected -->
+      <section class="navbar__login">
+        <a onclick="logIn()" class="navbar__login_btn" href="#">Log In</a>
+        <a class="navbar__signup_btn" href="#">Sign Up</a>
+      </section>
+    </nav>
+  </div>
+
+
+  <!-- Book Details -->
+  <div class="container">
+    <section class="bookDetails">
+      <div class="bookDetails__left">
+        <img class="bookDetails__image"
+          src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1586722975i/2767052.jpg"
+          alt="book">
+        <div class="bookDetails__buttons">
+          <button type="button">Add it my books</button>
+          <button type="button">Read it</button>
+          <button type="button">Wanna read it</button>
+          <button type="button">Currently Reading</button>
+        </div>
+      </div>
+      <div class="bookDetails__right">
+        <h1 class="bookDetails__title">The Hunger Games</h1>
+        <h2 class="bookDetails__author">Suzanne Collins</h2>
+        <div class="bookDetails__rating">
+          <div>
+            <img src="assets/icons/star-fill.svg" alt="star-fill">
+            <img src="assets/icons/star-fill.svg" alt="star-fill">
+            <img src="assets/icons/star-fill.svg" alt="star-fill">
+            <img src="assets/icons/star-fill.svg" alt="star-fill">
+            <img src="assets/icons/star-half.svg" alt="star-fill">
+          </div>
+          <span class="bookDetails__rating">
+            4.34
+          </span>
+        </div>
+        <p class="bookDetails__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque autem neque repellat harum, eum
+          debitis cumque illo quod corporis provident accusamus repellendus aperiam. Eligendi doloribus deserunt qui
+          sunt assumenda debitis ullam, odio cumque vel explicabo magni dolorum nulla molestiae. Magnam, minima esse!
+          Modi tempore consectetur suscipit facilis, earum corporis.
+        </p>
+        <div class="bookDetails__genres">
+          <h4 class="bookDetails__genre--title">
+            Genres
+          </h4>
+          <h4 class="bookDetails__genre">
+            Young Adult
+          </h4>
+          <h4 class="bookDetails__genre">
+            Fiction
+          </h4>
+          <h4 class="bookDetails__genre">
+            Fantasy
+          </h4>
+          <h4 class="bookDetails__genre">
+            Science Fiction
+          </h4>
+          <h4 class="bookDetails__genre">
+            Teen
+          </h4>
+          <h4 class="bookDetails__genre">
+            Audiobook
+          </h4>
+          <h4 class="bookDetails__genre">
+            Post Apocalyptic
+          </h4>
+        </div>
+        <div class="bookDetails__size">
+          <h5>374 pages, Hardcover</h5>
+          <h5>First published September 14, 2008</h5>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  </div>
+</body>
+
 </html>

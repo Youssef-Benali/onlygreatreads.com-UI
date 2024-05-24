@@ -1,0 +1,12 @@
+.books {
+    width: 100%;
+}
+
+.books th,
+.books td {
+    text-align: left;
+}
+
+.books td {
+    padding-top: 1rem;
+}

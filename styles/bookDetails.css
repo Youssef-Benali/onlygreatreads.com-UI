@@ -1,0 +1,75 @@
+.bookDetails {
+    display              : grid;
+    grid-template-columns: 20fr 80fr;
+    gap                  : 6rem;
+}
+
+.bookDetails__image {
+    margin          : 0 auto;
+    width           : 100%;
+    background-color: red;
+    border-radius   : 1rem;
+}
+
+.bookDetails__left {}
+
+.bookDetails__buttons {
+    display       : flex;
+    flex-direction: column;
+    width         : 100%;
+}
+
+.bookDetails__buttons button {
+    cursor       : pointer;
+    margin-top   : .75rem;
+    background   : none;
+    border       : 2px solid var(--content-color);
+    padding      : .5rem;
+    border-radius: 1rem;
+}
+
+.bookDetails__author {
+    font-family: "Sofia Pro ExtraLight";
+}
+
+.bookDetails__title {
+    font-size: 1.75rem;
+}
+
+.bookDetails__author {
+    font-style: 1.5rem;
+}
+
+.bookDetails__rating {
+    font-size: 1.35rem;
+    display  : flex;
+}
+
+.bookDetails__rating div {
+    margin-right: 1rem;
+    margin-top  : .175rem;
+}
+
+.bookDetails__genres {
+    display    : flex;
+    align-items: center;
+}
+
+
+.bookDetails__genre--title, .bookDetails__size {
+    font-family: "Sofia Pro ExtraLight";
+}
+
+.bookDetails__genres h4 {
+    margin-right  : 1rem;
+    padding-bottom: .25rem;
+}
+
+.bookDetails__genre {
+    padding-bottom: .25rem;
+    border-bottom : 2px solid var(--blue-color);
+}
+
+.bookDetails__size h5{
+    margin: .5rem 0;
+}
