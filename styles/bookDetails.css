@@ -1,3 +1,15 @@
+.bookDetails__genre--title,
+.bookDetails__size,
+.bookDetails__author {
+    font-family: "Sofia Pro ExtraLight";
+}
+
+.author__informations,
+.author__bio {
+    font-family: "Sofia Pro Light";
+}
+
+
 .bookDetails {
     display              : grid;
     grid-template-columns: 20fr 80fr;
@@ -10,8 +22,6 @@
     background-color: red;
     border-radius   : 1rem;
 }
-
-.bookDetails__left {}
 
 .bookDetails__buttons {
     display       : flex;
@@ -28,9 +38,7 @@
     border-radius: 1rem;
 }
 
-.bookDetails__author {
-    font-family: "Sofia Pro ExtraLight";
-}
+
 
 .bookDetails__title {
     font-size: 1.75rem;
@@ -56,9 +64,7 @@
 }
 
 
-.bookDetails__genre--title, .bookDetails__size {
-    font-family: "Sofia Pro ExtraLight";
-}
+
 
 .bookDetails__genres h4 {
     margin-right  : 1rem;
@@ -70,6 +76,60 @@
     border-bottom : 2px solid var(--blue-color);
 }
 
-.bookDetails__size h5{
-    margin: .5rem 0;
+.bookDetails__size h5 {
+    margin: .75rem 0;
+
+}
+
+.bookDetails__size {
+    padding      : .5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205)
+}
+
+.author__informations {
+    margin-left   : 1rem;
+    display       : flex;
+    flex-direction: column;
+}
+
+.aboutAuthor {
+    display    : flex;
+    align-items: center;
+}
+
+.author__picture {
+    width        : 72px;
+    height       : 72px;
+    border-radius: 50%;
+}
+
+.author__informations p {
+    margin: 0 0 .5rem 0;
+}
+
+.author__numbers {
+    opacity: .8;
+}
+
+.author__bio {
+    margin : 0;
+    padding: 1rem 0 0 0;
+}
+
+.bio__btn--block {
+    position: relative;
+}
+
+.author__bio--btn {
+    cursor         : pointer;
+    font-weight    : bold;
+    text-decoration: underline;
+    margin         : 0;
+    padding        : 0 0 3rem 0;
+    border         : none;
+    background     : none;
+}
+
+.bio--invisible {
+    display: none;
 }

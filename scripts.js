@@ -75,3 +75,18 @@ function toggleFormOptions(option) {
     register.style.flexDirection = "inherit";
   }
 }
+
+// Show more text author__bio
+
+function showMoreText() {
+  let btn = document.querySelector(".author__bio--btn")
+  let textClass = document.querySelector(".bio--block");
+
+  if (textClass.classList.contains("bio--invisible")) {
+    btn.innerText = "Show less..."
+    textClass.classList.remove("bio--invisible");
+  } else {
+    textClass.classList.add("bio--invisible");
+    btn.innerText = "Show more..."
+  }
+}
