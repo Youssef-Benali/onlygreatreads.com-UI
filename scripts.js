@@ -79,14 +79,30 @@ function toggleFormOptions(option) {
 // Show more text author__bio
 
 function showMoreText() {
-  let btn = document.querySelector(".author__bio--btn")
+  let btn = document.querySelector(".author__bio--btn");
   let textClass = document.querySelector(".bio--block");
 
   if (textClass.classList.contains("bio--invisible")) {
-    btn.innerText = "Show less..."
+    btn.innerText = "Show less...";
     textClass.classList.remove("bio--invisible");
   } else {
     textClass.classList.add("bio--invisible");
-    btn.innerText = "Show more..."
+    btn.innerText = "Show more...";
   }
 }
+
+// Choose the size of the progress bar
+
+function updateProgressBars(ratings) {
+  const totalRatings = ratings.reduce((a, b) => a + b, 0);
+
+  ratings.forEach((rating, index) => {
+    const percentage = (rating / totalRatings) * 100;
+    const progressBar = document.getElementById(`progress-bar-${5 - index}`);
+    progressBar.style.width = percentage + "%";
+  });
+}
+
+// Example set of ratings: [number of 5-star reviews, number of 4-star reviews, number of 3-star reviews, number of 2-star reviews, number of 1-star reviews]
+const ratings = [50, 30, 10, 5, 5];
+updateProgressBars(ratings);
