@@ -1,3 +1,38 @@
+// Books Being Discussed images generated
+window.onload = () => {
+  let imgLinks = [
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1677815321l/28389714._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1660694120l/61953559._SX50_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1651622856l/60657589._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1693156633l/140316113._SX50_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1469725638l/31284758._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1541619661l/42658987._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1682386381l/123416743._SX50_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1625341313l/6566798._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1693774318l/198218463._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1465062557l/26879178._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1670344990l/64360031._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1488558872l/34455798._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1473958109l/32055177._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630283405l/57293966._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642451l/60759266._SX50_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589358965l/24390080._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1496685444l/34042261._SX50_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1645643546l/60482718._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1687528763l/63008072._SY75_.jpg",
+    "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1680124372l/123115331._SX50_.jpg",
+  ];
+  function mapBooks() {
+    let elementContainer = document.querySelector(".books__discussed");
+
+    imgLinks.map((link) => {
+      elementContainer.innerHTML += `<img src=${link} alt="Book Image"/>`;
+    });
+  }
+
+  mapBooks();
+};
+
 // NavBar UI close interaction for mobile menu
 function toggleNavigationBar() {
   let navbarMobileContainer = document.querySelector(

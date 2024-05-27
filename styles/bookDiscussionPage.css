@@ -1,0 +1,78 @@
+.discussions h4,
+.discussions p {
+    margin: 0;
+}
+
+.discussions {
+    display              : grid;
+    grid-template-columns: 75fr 25fr;
+    gap                  : 1rem;
+}
+
+.book__informations {
+    display       : flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+}
+
+.book__details {
+    padding: 0 1rem;
+}
+
+.books__discussed--title {
+    border-bottom : 1px solid rgba(0, 0, 0, 0.205);
+    padding-bottom: .25rem;
+}
+
+.books__discussed {
+    padding-top          : 1rem;
+    gap                  : .25rem;
+    display              : grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.discussions__book {}
+
+.book__discussions {}
+
+/* topics */
+.topic__title {
+    padding      : 1rem 0 .25rem 0;
+    font-family  : "Sofia Pro Light";
+    border-bottom: 1px solid rgba(0, 0, 0, 0.405);
+}
+
+.topics table {
+    border-collapse: collapse;
+    width          : 100%;
+    text-align     : left;
+}
+
+.topics thead th {
+    font-weight: lighter;
+    font-family: "Sofia Pro ExtraLight";
+    padding    : 1rem 0 .25rem 0;
+    white-space: nowrap;
+}
+
+.topics th {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.405);
+}
+
+.topics td {
+    overflow: hidden;
+    padding : .75rem 0;
+}
+
+.tdtopic__title {
+    max-width: 200px;
+    padding  : .5rem 0;
+}
+
+.tdtopic__author {
+    opacity: .7;
+}
+
+.newtopic__msg {
+    color: rgba(255, 0, 0, 0.725);
+}
