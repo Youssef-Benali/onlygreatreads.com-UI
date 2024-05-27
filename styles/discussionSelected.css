@@ -1,0 +1,38 @@
+.selected__discussion {}
+
+.selected__discussion h3 {
+    font-weight   : lighter;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.300);
+    padding-bottom: .25rem;
+}
+
+.author--post  {}
+
+.post--details {
+    display              : grid;
+    grid-template-columns: 1fr 99fr;
+}
+
+.post--informations {
+    display       : flex;
+    flex-direction: row;
+    padding-top   : .25rem;
+}
+
+.post--details img {
+    width        : 32px;
+    padding-right: .5rem;
+}
+
+.author--name {
+    color        : var(--blue-color);
+    padding-right: .75rem;
+}
+
+.post--date {
+    opacity: .7;
+}
+
+.post--content {}
+
+.selected__discussion--userMessage {}
