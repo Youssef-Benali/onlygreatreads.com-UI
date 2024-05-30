@@ -4,7 +4,9 @@ const routes = {
   "/": "components/home.html",
   "/loginForm": "components/loginForm.html",
   "/registerForm": "components/registerForm.html",
-  "/contact": "contact.html",
+  "/myBooks": "components/bookPage.html",
+  "/bookDetails": "components/bookDetails.html",
+  
 };
 
 const rootDiv = document.getElementById("content");

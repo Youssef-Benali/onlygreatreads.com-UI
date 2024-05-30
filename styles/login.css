@@ -69,6 +69,8 @@
 }
 
 .login__button {
+    font-size       : .9rem;
+    text-align      : center;
     cursor          : pointer;
     border-radius   : .75rem;
     padding         : .66rem;
