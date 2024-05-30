@@ -13,6 +13,11 @@
     display: flex;
 }
 
+
+/* .login__options a {
+    
+} */
+
 .login--option {
     display        : inherit;
     justify-content: inherit;
@@ -20,7 +25,8 @@
 }
 
 .register--option {
-    display: none;
+    display       : flex;
+    flex-direction: column;
 }
 
 

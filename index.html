@@ -18,7 +18,10 @@
 
   <link rel="stylesheet" href="style.css" />
   <script defer src="scripts.js"></script>
-  <title>Only Great Reads - UI</title>
+  <title>Only Great Reads - UI
+
+
+  </title>
 </head>
 
 <body onload="updateProgressBars([54, 30, 11, 2, 1])">
@@ -26,7 +29,7 @@
   <div class="container">
     <nav class="navbar__mobile">
       <div class="logo">
-        <p>Only Great Reads</p>
+        <p> <a href="#/">Only Great Reads</a></p>
       </div>
       <img onclick="toggleNavigationBar()" class="mobile__icon" src="assets/icons/menu.svg" alt="Mobile menu icon" />
       <section class="navbar__mobile--container">
@@ -50,8 +53,8 @@
         </div>
         <!-- Not connected -->
         <div class="navbar__login--mobile">
-          <a onclick="logIn()" class="navbar__login_btn--mobile" href="#">Log In</a>
-          <a class="navbar__signup_btn--mobile" href="#">Sign Up</a>
+          <a class="navbar__login_btn--mobile" href="#/loginForm">Log In</a>
+          <a class="navbar__signup_btn--mobile" href="#/registerForm">Sign Up</a>
         </div>
       </section>
     </nav>
@@ -60,7 +63,7 @@
     <nav class="navbar">
       <section class="navbar__leftgroup">
         <div class="logo">
-          <p>Only Great Reads</p>
+          <p> <a href="#/">Only Great Reads</a></p>
         </div>
         <form class="input__group">
           <img src="assets/icons/search.svg" alt="Search icon" />
@@ -110,7 +113,7 @@
                 </div>
                 <div class="dropdown_menu--item">
                   <img src="assets/icons/log-out.svg" alt="Gift icon" />
-                  <a onclick="logOut()" href="#">Sign Out</a>
+                  <a href="#">Sign Out</a>
                 </div>
               </div>
             </div>
@@ -119,13 +122,16 @@
       </section>
       <!-- If not connected -->
       <section class="navbar__login">
-        <a onclick="logIn()" class="navbar__login_btn" href="#">Log In</a>
-        <a class="navbar__signup_btn" href="#">Sign Up</a>
+        <a class="navbar__login_btn" href="#/loginForm">Log In</a>
+        <a class="navbar__signup_btn" href="#/registerForm">Sign Up</a>
       </section>
     </nav>
   </div>
 
- 
+
+  <div id="content"></div>
+  <script src="main.js"></script>
+
 
 
   </div>
