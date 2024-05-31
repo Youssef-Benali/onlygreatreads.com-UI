@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/bookReview.css" />
   <link rel="stylesheet" href="styles/bookDiscussionPage.css" />
   <link rel="stylesheet" href="styles/discussionSelected.css" />
+  <link rel="stylesheet" href="styles/accountSettings.css" />
 
   <link rel="stylesheet" href="style.css" />
   <script defer src="scripts.js"></script>
@@ -43,7 +44,7 @@
           </div>
           <ul class="navbar__mobile--links">
             <li>Gift subscription</li>
-            <li>Account settings</li>
+            <li><a href="#/accountSettings">Account settings</a></li>
             <li>View profile</li>
             <li>Friends</li>
             <li>My discussions</li>
@@ -93,7 +94,7 @@
                 </div>
                 <div class="dropdown_menu--item">
                   <img src="assets/icons/settings.svg" alt="Gift icon" />
-                  <a href="#">Account settings</a>
+                  <a href="#/accountSettings">Account settings</a>
                 </div>
                 <div class="dropdown_menu--item">
                   <img src="assets/icons/folder.svg" alt="Gift icon" />
@@ -113,7 +114,7 @@
                 </div>
                 <div class="dropdown_menu--item">
                   <img src="assets/icons/log-out.svg" alt="Gift icon" />
-                  <a href="#">Sign Out</a>
+                  <a onclick="logOut()" href="#">Sign Out</a>
                 </div>
               </div>
             </div>

@@ -1,0 +1,57 @@
+<div class="container">
+    <section class="accountSettings">
+        <!-- <h2>Account Settings</h2> -->
+        <div class="accountSettings__navBar">
+            <a href="#/accountSettings/user">
+                <h3 class="settings__link accountSettings--active">
+                    User
+                </h3>
+            </a>
+            <a href="#/accountSettings/password">
+                <h3 class="settings__link">
+                    Password
+                </h3>
+            </a>
+            <a href="#/accountSettings/notifications">
+                <h3 class="settings__link">
+                    Notifications
+                </h3>
+            </a>
+            <a href="#/accountSettings/biling">
+                <h3 class="settings__link">
+                    Biling & Subscription
+                </h3>
+            </a>
+        </div>
+
+        <div class="accountSettings--user">
+            <h2>Your Profile Picture </h2>
+            <div class="user__imageBlock">
+                <div class="user__imageBlock">
+                    <img class="user__image" src="../assets/profile-picture.svg" alt="Profile Picture">
+                    <div id="uploadButtonWrapper">
+                        <label for="uploadButton" id="customButton">Upload Image</label>
+                        <input type="file" id="uploadButton" accept="image/*" onchange="showImage(event)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user__informations">
+            <div class="form-container">
+                <div class="form-group">
+                    <div class="input-container">
+                        <label for="fullName">Username</label>
+                        <input type="text" id="fullName" value="Bob Example">
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" value="sixfoissept423@gmail.com">
+
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn--upload"> Update Profile </button>
+        </div>
+    </section>
+</div>

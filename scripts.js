@@ -49,7 +49,6 @@ function closeMobileMenu() {
 
 // Login UI interactions
 function logOut() {
-  alert("Log Out")
   let navbarLoginMobile = document.querySelector(".navbar__login--mobile");
   let navbarMenuConnected = document.querySelector(
     ".navbar__mobile--connected"

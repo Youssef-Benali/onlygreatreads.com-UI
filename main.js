@@ -6,7 +6,10 @@ const routes = {
   "/registerForm": "components/registerForm.html",
   "/myBooks": "components/bookPage.html",
   "/bookDetails": "components/bookDetails.html",
-  
+  "/accountSettings/user": "components/userSettings.html",
+  "/accountSettings/password": "components/passwordSettings.html",
+  "/accountSettings/notifications": "components/notificationsSettings.html",
+  "/accountSettings/biling": "components/bilingSettings.html",
 };
 
 const rootDiv = document.getElementById("content");
