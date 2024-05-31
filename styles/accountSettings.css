@@ -111,9 +111,9 @@
 .form-container {
     padding      : 20px;
     border-radius: 8px;
-    width        : 80%;
     width        : 100%;
 }
+
 
 .form-group {
     display        : flex;
@@ -121,12 +121,16 @@
     margin-bottom  : 20px;
 }
 
-.form-group label {
+
+
+.form-group label,
+.form-group-password label {
     opacity    : .66;
     font-weight: bold;
 }
 
-.form-group input {
+.form-group input,
+.form-group-password input {
     width        : 95%;
     padding      : 10px;
     border       : 1px solid #ddd;
@@ -158,6 +162,66 @@
     opacity: .8;
 }
 
+
+
+.user__informations--password {
+    display       : flex;
+    align-items   : start;
+    flex-direction: column;
+}
+
+.user__informations--password h2 {
+    margin-top    : 0;
+    opacity       : .85;
+    padding-bottom: .75rem;
+}
+
+.input-container-password {
+    margin-bottom: 1.5rem;
+}
+
+.form-container-password {
+    border-radius: 8px;
+    width        : 50%;
+}
+
+.form-group-password {
+    flex-direction: column;
+}
+
+.btn--changePassword {
+    font-family     : "Sofia Pro Regular ";
+    padding         : 10px 20px;
+    font-size       : 1rem;
+    cursor          : pointer;
+    background-color: var(--content-color);
+    color           : var(--background-color-section);
+    border          : none;
+    border-radius   : 5px;
+    box-shadow      : 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition      : background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container-password {
+    padding-top  : 1rem;
+    border-radius: 8px;
+    width        : 50%;
+}
+
+.form-group-password {
+    display        : flex;
+    justify-content: space-between;
+}
+
+#oldPassword,
+#newPassword,
+#confirmPassword {
+    width: 100% !important;
+}
+
+
+
+/* Responsive */
 @media screen and (max-width: 876px) {
     .accountSettings__navBar {
         grid-template-columns: 1fr;
@@ -188,4 +252,12 @@
         margin: 0;
     }
 
+
+    .form-container-password {
+        width: 100%;
+    }
+
+    .btn--changePassword {
+        width: 100%;
+    }
 }
