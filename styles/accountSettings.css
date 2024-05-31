@@ -10,7 +10,7 @@
     padding-bottom       : .5rem;
 }
 
-.settings__link h3 {
+.settings__link {
     transition: .3s opacity ease-in-out;
     cursor    : pointer;
 }
@@ -19,7 +19,7 @@
     opacity: 1;
 }
 
-.accountSettings h3 {
+.settings__link {
     text-align: center;
     padding   : .75rem 0;
     opacity   : .33;
@@ -220,6 +220,32 @@
 }
 
 
+.notification--option {
+    font-weight  : lighter;
+    padding-right: 1rem;
+}
+
+.notification--option-block {
+    display        : flex;
+    align-items    : center;
+    justify-content: flex-start;
+}
+
+.toggle-icon {
+    width: 36px;
+}
+
+.notifications--description {
+    font-size: 1.2rem;
+}
+
+.notifications--explanations {
+    padding-bottom: .5rem;
+    margin-bottom : 3rem;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.100);
+}
+
+
 
 /* Responsive */
 @media screen and (max-width: 876px) {
@@ -227,7 +253,7 @@
         grid-template-columns: 1fr;
     }
 
-    .accountSettings h3 {
+    .settings__link {
         margin: .25rem 0;
     }
 

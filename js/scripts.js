@@ -141,3 +141,5 @@ function updateProgressBars(ratings) {
 // Example set of ratings: [number of 5-star reviews, number of 4-star reviews, number of 3-star reviews, number of 2-star reviews, number of 1-star reviews]
 const ratings = [50, 30, 10, 5, 5];
 updateProgressBars(ratings);
+
+
