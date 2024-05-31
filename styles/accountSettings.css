@@ -246,6 +246,23 @@
 }
 
 
+.billing--option {
+    display    : flex;
+    align-items: center;
+    padding    : .5rem 0;
+}
+
+.billing--option label {
+    margin-left: 1rem;
+}
+
+.btn--buy {
+    margin-top: 1rem;
+}
+
+.option-billing-toggle {
+    padding-top: 1rem;
+}
 
 /* Responsive */
 @media screen and (max-width: 876px) {
