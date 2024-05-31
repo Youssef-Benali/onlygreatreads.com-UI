@@ -3,6 +3,8 @@
 const routes = {
   "/": "components/home.html",
   "/loginForm": "components/loginForm.html",
+  "/loginFormOTP": "components/loginFormOTP.html",
+  "/OTPVerification": "components/otpVerificationPopup.html",
   "/registerForm": "components/registerForm.html",
   "/myBooks": "components/bookPage.html",
   "/bookDetails": "components/bookDetails.html",
