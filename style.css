@@ -50,6 +50,14 @@ a {
     color          : inherit;
 }
 
+h5{
+    font-weight: lighter;
+}
+
+.container, .container--centered, .container--transition{
+    padding-bottom: 2rem;
+}
+
 .container {
     max-width: 1280px;
     margin   : 0 auto;
@@ -62,6 +70,12 @@ a {
 .container--centered {
     display        : flex;
     justify-content: center;
+}
+
+.align-text{
+    display: flex;
+    gap: 1rem;
+    font-weight: lighter;
 }
 
 /* grid */

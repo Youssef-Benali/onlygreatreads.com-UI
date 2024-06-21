@@ -29,6 +29,7 @@
 }
 
 .home__image img {
+    mix-blend-mode: multiply;
     width: 100%;
 }
 

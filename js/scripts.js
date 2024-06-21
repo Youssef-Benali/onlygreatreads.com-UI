@@ -24,9 +24,13 @@ window.onload = () => {
   ];
   function mapBooks() {
     let elementContainer = document.querySelector(".books__discussed");
+    let followersContainer = document.querySelector(".followers--block");
 
     imgLinks.map((link) => {
       elementContainer.innerHTML += `<img src=${link} alt="Book Image"/>`;
+    });
+    imgLinks.map((link) => {
+      followersContainer.innerHTML += `<img src=${link} alt="Book Image"/>`;
     });
   }
 

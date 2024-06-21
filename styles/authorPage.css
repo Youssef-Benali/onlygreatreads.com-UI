@@ -1,0 +1,117 @@
+.author--block {
+    display              : grid;
+    grid-template-columns: 20fr 80fr;
+    padding              : 3rem 2rem;
+}
+
+.author--biography,
+.author--details {
+    padding-left : 1rem;
+    padding-right: 1rem;
+
+}
+
+.author--image {
+    width: 200px;
+}
+
+.author--fullname {
+    border-bottom : 1px solid rgba(0, 0, 0, 0.200);
+    margin        : 0;
+    padding-bottom: .33rem;
+}
+
+.author--details {
+    display              : grid;
+    grid-template-columns: 10fr 90fr;
+    align-items          : center;
+}
+
+.author--details h5 {
+    margin: 0;
+}
+
+.author--details a,
+.author--genres {
+    color: var(--blue-color);
+}
+
+.author--genres {
+    text-decoration: underline;
+}
+
+.author--biography p {
+    line-height: 1.33rem;
+    font-size  : 1.1rem;
+}
+
+.author--followersCount,
+.author--booksList {
+    text-transform: uppercase;
+    font-size     : .7rem;
+    font-weight   : lighter;
+    padding-bottom: .35rem;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.200);
+}
+
+.author--followersCount {
+    width        : -moz-fit-content;
+    width        : fit-content;
+    margin-bottom: .75rem;
+}
+
+.followers--block img {
+    width: 28px;
+}
+
+.author--booksList-block h4,
+.author--booksList-block h5 {
+    margin        : 0;
+    padding-bottom: .75rem;
+}
+
+.author--book {
+    display              : flex;
+    padding: 1rem 0 .25rem 0;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.100);
+}
+
+.author--book--details{
+    padding-left: 2.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .author--booksList-block {
+    display              : flex;
+} */
+
+.author--booksList-block {
+    font-weight: lighter !important;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 968px) {
+    .author--block {
+        grid-template-columns: 1fr;
+    }
+
+    .author--leftblock {
+        display: flex;
+        padding: 0 1rem;
+    }
+
+    .author--followers {
+        padding-left: 1.5rem;
+    }
+
+    .author--followersCount {
+        margin-top: .25rem;
+    }
+
+    .author--image {
+        padding-bottom: 2rem;
+    }
+}
