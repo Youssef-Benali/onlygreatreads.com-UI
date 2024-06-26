@@ -50,12 +50,14 @@ a {
     color          : inherit;
 }
 
-h5{
+h5 {
     font-weight: lighter;
 }
 
-.container, .container--centered, .container--transition{
-    padding-bottom: 2rem;
+.container,
+.container--centered,
+.container--transition {
+    padding-bottom: 5rem;
 }
 
 .container {
@@ -72,9 +74,9 @@ h5{
     justify-content: center;
 }
 
-.align-text{
-    display: flex;
-    gap: 1rem;
+.align-text {
+    display    : flex;
+    gap        : 1rem;
     font-weight: lighter;
 }
 
@@ -149,6 +151,18 @@ h5{
     font-weight  : bold;
     color        : var(--blue-color);
     border-bottom: 2px solid rgba(18, 80, 130, 0.6);
+}
+
+/* Quote */
+
+.quote {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 1.5rem 0;
+    font-size : 2rem;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 1px;
 }
 
 

@@ -1,61 +1,107 @@
 /* Homepage Buying options */
+.plans--block{
+    padding: 4rem 0;
+}
+
 .plans {
-    gap       : 1rem;
-    padding   : 2rem 0;
-    text-align: center;
+    padding              : 2rem 0;
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap                  : 1rem;
 }
 
-
-.plan__option {
-    display         : flex;
-    flex-direction  : column;
-    justify-content : space-between;
-    height          : 450px;
-    border-radius   : .25rem;
-    padding         : 2rem 3rem;
-    border          : 1px solid var(--white-color);
+.plan {
+    box-shadow:
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
     background-color: var(--background-color-section);
+    padding         : 1.5rem 2rem;
 }
 
-.plan__option--description p {
-    display        : flex;
-    align-items    : center;
-    justify-content: space-between;
-
+.plan--popular {
+    color              : var(--background-color-section);
+    background-color   : var(--blue-color);
+    background-image   : url(../assets/icons/bookmarks-fill.svg);
+    background-repeat  : no-repeat;
+    background-position: 93% -3%;
+    background-size    : 10%;
 }
 
-.plan__option--text {
-    text-align: left;
-    font-size : 1.15rem;
-    border-top: 1px solid rgba(7, 7, 7, 0.286);
-    padding   : 1rem 0;
+.plan__topBlock{
+    height: 225px;
 }
 
-.plan__option h1,
-.plan__option h2 {
+.plans__title{
+    text-align: center;
     margin: 0;
 }
 
-.plan__option h2 {
-    color: var(--blue-color);
+.plans__title h1{
+    font-size: 2.25rem;
 }
 
-.plan__option h1 {
-    padding: 1.5rem 0;
+.plans__title h2{
+    opacity: .9;
+    font-weight: lighter;
+    margin: 0;
 }
 
-.plan__option--detail {
-    font-size     : 1rem;
+.plan__title {
+    margin   : 0;
+    padding  : .5rem 0;
+    font-size: 2rem;
+}
+
+.plan__description {
+    padding  : 0 0 .95rem 0;
+    font-size: 1.15rem;
+}
+
+.plan__prices {
     padding-bottom: 2rem;
 }
 
-.plan__option--best h2 {
-    color: var(--background-color-section);
+.plan__prices h2 {
+    margin: 0 0 .25rem 0;
 }
 
-.plan__option--best {
-    color           : var(--background-color-section);
-    background-color: var(--blue-color);
+.plan__prices--details {
+    opacity    : .8;
+    font-weight: lighter;
+    font-style : italic;
+
+}
+
+.plan__prices--details span {
+    margin-right: .15rem;
+}
+
+.prices-asterisk-icon {
+    width: 10px;
+}
+
+.plan__features {
+    border-top : 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem 0;
+}
+
+
+.feature--check-icon {
+    width        : 20px;
+    padding-right: 1rem;
+}
+
+.plan__feature {
+    padding-top: 1rem;
+    display    : flex;
+    align-items: center;
+}
+
+.plan__feature p {
+    font-weight: bold;
+    opacity    : .8;
+    margin     : 0;
 }
 
 /* Responsive */
