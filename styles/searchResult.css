@@ -1,0 +1,69 @@
+.searchResult{
+
+}
+
+.pagination-block {
+    display           : flex;
+    /* justify-content: space-between; */
+    flex-direction    : column;
+}
+
+.pagination {
+    display    : flex;
+    padding    : 2rem 0 0 0;
+    align-items: center;
+}
+
+.pagination-btn {
+    cursor          : pointer;
+    font-weight     : bold;
+    background-color: var(--content-color);
+    color           : var(--background-color);
+    border          : none;
+    padding         : 0 1rem;
+    height          : 42px;
+    opacity         : 9;
+    border-radius   : 0.7rem;
+}
+
+.pagination-pages {
+    list-style-type: none;
+    padding        : 0 1rem;
+    display        : flex;
+    align-items    : center;
+    align-content  : center;
+}
+
+.pagination-page {
+    cursor          : pointer;
+    padding         : .3rem;
+    border-radius   : 50%;
+    color           : white;
+    width           : 16px;
+    font-size       : 0.9rem;
+    opacity         : .4;
+    height          : 16px;
+    background-color: var(--content-color);
+    margin          : 0 .45rem;
+    text-align      : center;
+    background-color: none;
+}
+
+.active-page {
+    background-color: var(--content-color);
+    opacity         : .9;
+}
+
+.itemPerPage {
+    font-size: 1rem;
+    opacity  : .9;
+    margin   : 1.25rem 0 0 .25rem;
+}
+
+.itemPerPage input {
+    width      : 36px;
+    border     : none;
+    background : none;
+    font-size  : .9rem;
+    font-weight: bolder;
+}

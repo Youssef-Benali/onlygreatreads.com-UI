@@ -12,7 +12,8 @@ const routes = {
   "/accountSettings/password": "components/passwordSettings.html",
   "/accountSettings/notifications": "components/notificationsSettings.html",
   "/accountSettings/biling": "components/bilingSettings.html",
-  "/authorPage": "components/authorPage.html"
+  "/authorPage": "components/authorPage.html",
+  "/searchResult": "components/searchResult.html",
 };
 
 const rootDiv = document.getElementById("content");

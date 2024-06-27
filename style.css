@@ -65,6 +65,10 @@ h5 {
     margin   : 0 auto;
 }
 
+.container--noPadding{
+    padding: 0;
+}
+
 .container--transition {
     background-color: var(--background-color-section);
 }
